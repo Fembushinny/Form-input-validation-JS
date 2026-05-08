@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User Registration Form</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      .success {
+        border: 2px solid green;
+      }
+
+      .error {
+        border: 2px solid red;
+      }
+
+      small {
+        color: red;
+        display: block;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="form">
+      <h1>User Registration Form</h1>
+      <!-- Full Name -->
+      <label>
+        Full Name
+        <input id="full-name" type="text" placeholder="Enter your Full Name" />
+        <small id="name-error"></small>
+      </label>
+
+      <!-- Email -->
+      <label>
+        Email Address
+        <input id="email" type="email" placeholder="Enter your Email Address" />
+        <small id="email-error"></small>
+      </label>
+
+      <!-- Password -->
+      <label>
+        Password
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your Password"
+        />
+        <small id="password-error"></small>
+      </label>
+
+      <!-- Confirm Password -->
+      <label>
+        Confirm Password
+        <input
+          id="confirm-password"
+          type="password"
+          placeholder="Re-enter Password"
+        />
+        <small id="confirm-error"></small>
+      </label>
+
+      <!-- Age -->
+      <label>
+        Age
+
+        <input id="age" type="number" placeholder="Enter your age" />
+        <small id="age-error"></small>
+      </label>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
